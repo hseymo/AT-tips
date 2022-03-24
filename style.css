@@ -2,21 +2,26 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
     /* note to self - setting padding and margin to zero gets rid of default html settings */
 }
 
-header {
-    background: lavender;
+.fixed {
+    background: #4ADEDE;
     position: fixed;
     width: 100%;
-    border: 2px solid black;
+    top: 0;
+    border: 2px solid #1E2F97;
+    z-index: 20;
+    border-radius: 5px;
 }
 
 h1 {
-    background: peachpuff;
-    border: 2px solid black;
+    background: #1AA7EC;
+    border: 2px solid #1E2F97;
     padding: 5px;
     margin: 10px;
+    border-radius: 5px;
 }
 
 nav {
@@ -24,12 +29,84 @@ nav {
     margin-right: 20px;
 }
 
-header li {
+.fixed li {
     list-style-type: none;
     display: inline-block;
     margin: 0px 10px 15px;
 }
 
 a {
-    color: olivedrab;
+    color: #1E2F97;
+}
+
+.belowheader {
+    text-align: center;
+    position: relative;
+    padding-top: 100px;
+}
+
+p {
+    padding: 30px;
+    color: #1E2F97;
+}
+
+.learningTopics {
+    padding: 20px; 
+    border: 2px solid #1E2F97;
+    border-radius: 5px;
+    margin: 20px;
+    display: inline-block;
+    width: 33%;
+    background: #797EF6;
+}
+
+.learningTopics h2 {
+    padding-bottom: 30px;
+    color: white;
+}
+
+.learningTopics p {
+    text-align: justify;
+    color: black;
+}
+
+#emergency ol {
+    padding-left: 30px;
+    padding-right: 10px;
+}
+
+#emergency li {
+    text-align: justify;
+    /* padding-left: 10px; */
+}
+
+#emergency li li {
+    margin-left: 25px;
+}
+
+#about ul {
+    list-style-type: none;
+    padding-top: 5px;
+}
+
+.dataentry {
+    padding: 5px;
+}
+
+footer {
+    text-align: center;
+    background-color: #1AA7EC;
+    padding: 23px;
+    border-radius: 5px;
+    color: white;
+}
+
+#absolute {
+    position:fixed;
+    right: 0;
+    bottom: 0;
+    padding:20px;
+    background: #4ADEDE;
+    border: 3px solid #1E2F97;
+    border-radius: 5px;
 }
